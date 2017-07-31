@@ -35,7 +35,7 @@ module.exports = function(grunt) {
 					{
 						expand: true,
 						cwd: 'html',
-						src: '*.html',
+						src: '**/*.html',
 						dest: 'public/'
 					}
 				],	
@@ -52,7 +52,7 @@ module.exports = function(grunt) {
 					{
 						expand: true,
 						cwd: 'html',
-						src: '*.html',
+						src: '**/*.html',
 						dest: 'public/'
 					}
 				],	
@@ -91,7 +91,8 @@ module.exports = function(grunt) {
 	    			hostname: '0.0.0.0',
 	    			base: 'public',
 	    			livereload: true,
-	    			open: true
+	    			open: true,
+	    			port: 8080
 	    		}
 	    	}
 	    },
@@ -117,7 +118,7 @@ module.exports = function(grunt) {
 						expand: true,
 						cwd: 'assets',
 						src: '**/*',
-						dest: 'public/assets/'
+						dest: 'public/'
 					}
 				]
 	    	}
